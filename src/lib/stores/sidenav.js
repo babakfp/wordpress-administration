@@ -25,7 +25,7 @@ export const sideNavItems = readable([
 	{
 		title: 'Posts',
 		href: '/posts',
-		icon: 'fa-thin fa-newspaper',
+		icon: 'fa-thin fa-note',
 		subItems: [
 			{
 				title: 'All Posts',
@@ -52,12 +52,12 @@ export const sideNavItems = readable([
 	{
 		title: 'Gallery',
 		href: '/gallery',
-		icon: 'fa-thin fa-images',
+		icon: 'fa-thin fa-image',
 	},
 	{
 		title: 'Pages',
 		href: '/pages',
-		icon: 'fa-thin fa-page',
+		icon: 'fa-thin fa-file',
 		subItems: [
 			{
 				title: 'All Pages',
@@ -133,7 +133,7 @@ export const sideNavItems = readable([
 	{
 		title: 'Tools',
 		href: '/tools',
-		icon: 'fa-thin fa-screwdriver-wrench',
+		icon: 'fa-thin fa-wrench-simple',
 		subItems: [
 			{
 				title: 'Available Tools',
@@ -164,7 +164,7 @@ export const sideNavItems = readable([
 	{
 		title: 'Settings',
 		href: '/settings',
-		icon: 'fa-thin fa-gear',
+		icon: 'fa-thin fa-cog',
 		subItems: [
 			{
 				title: 'General',
