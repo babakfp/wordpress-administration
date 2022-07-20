@@ -5,12 +5,12 @@
 			inline-flex items-center justify-center gap-3
 			h-10 px-4
 			border-2 border-transparent border-opacity-80
-			transition-all duration-200 ease-out
+			transition-all duration-150 ease-out
 			rounded !leading-none select-none whitespace-nowrap
-			active:scale-90
+			origin-bottom active:scale-y-90 active:scale-x-110
 			focus-visible:ring-3 ring-white ring-opacity-10
     ;
-    transform: perspective(100px) translateZ(0);
+    transform: perspective(100px) translateZ(0) translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 
 			* {
 				@apply duration-200 ease-out;
