@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@layer base {
+
+	::selection {
+		@apply bg-yellow-100 text-gray-800;
+	}
+
+	/* Chrome Scrollbar */
+	html *:not(body)::-webkit-scrollbar {
+		@apply w-1.5 h-1.5;
+
+		&-thumb {
+			@apply min-h-12 bg-white bg-opacity-10 rounded-full bg-clip-padding hover:bg-gray-600;
+			border: 2px solid transparent;
+		}
+	}
+	/* FireFox Scrollbar :| */
+	body *:not(span):not(a):not(p):not(header):not(footer) {
+		--tw-bg-opacity: 0.1;
+		scrollbar-width: thin;
+		scrollbar-color: rgb(255 255 255 / var(--tw-bg-opacity)) transparent;
+	}
+
+  * {
+		@apply select-none drag-none !outline-none;
+  }
+
+  html,
+	body {
+		@apply h-full;
+  }
+
+  html {
+		@apply scroll-smooth; 
+  }
+
+  body {
+		@apply min-h-screen bg-gray-900 text-gray-300 overflow-x-hidden;
+		font-family: var(--font-family);
+	}
+
+	a,
+	button,
+	input,
+	textarea {
+		font-family: inherit;
+	}
+
+	a {
+		@apply duration-150 ease-in-out transition-colors;
+	}
+
+	b,
+	strong {
+		@apply font-semibold;
+	}
+
+	img {
+		@apply max-w-full;
+	}
+
+  i {
+		@apply !flex items-center justify-center text-inherit text-base !leading-none;
+  }
+
+}

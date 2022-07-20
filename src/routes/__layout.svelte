@@ -1,0 +1,19 @@
+<script>
+  import '../lib/css/app.css'
+	import Header from '$partials/Header/Header.svelte'
+	import SideNav from '$partials/SideNav/SideNav.svelte'
+</script>
+
+<Header />
+<div class="max-w-screen-xl mx-auto md:flex">
+	<SideNav />
+	<main class="container pt-6">
+		<slot />
+	</main>
+</div>
+
+<!-- TODO: This is for PostType layout -->
+<!-- <div class="container [ flex items-center justify-between py-6 ] [ border-b border-white-5 ]">
+	<h1 class="text-xl font-medium">Templates</h1>
+	<a class="btn btn--sm btn--brand" href="/">Add New</a>
+</div> -->

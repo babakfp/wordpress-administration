@@ -1,0 +1,13 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"paths": {
+			"$partials": ["src/lib/partials"],
+			"$partials/*": ["src/lib/partials/*"],
+			"$stores": ["src/lib/stores"],
+			"$stores/*": ["src/lib/stores/*"],
+			"$utilities": ["src/utilities"],
+			"$utilities/*": ["src/utilities/*"]
+		}
+	}
+}

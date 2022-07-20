@@ -1,0 +1,27 @@
+{
+  "name": "wordpress-administration",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "dev:open": "svelte-kit dev --open",
+    "dev:host": "svelte-kit dev --host",
+    "dev:host:open": "svelte-kit dev --host --open",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "1.0.0-next.47",
+    "@sveltejs/kit": "1.0.0-next.303",
+    "@tailwindcss/line-clamp": "0.3.1",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.5",
+    "postcss-import": "14.1.0",
+    "postcss-load-config": "3.1.1",
+    "svelte": "3.46.4",
+    "svelte-local-storage-store": "0.2.6",
+    "svelte-outclick": "3.0.1",
+    "svelte-preprocess": "4.10.1",
+    "tailwindcss": "3.0.12"
+  },
+  "type": "module"
+}
