@@ -5,7 +5,7 @@
 </script>
 
 <Header />
-<div class="max-w-screen-xl mx-auto md:flex">
+<div class="max-w-screen-xl mx-auto sm:flex">
 	<SideNav />
 	<main class="container pt-6">
 		<slot />

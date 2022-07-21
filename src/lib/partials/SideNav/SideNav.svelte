@@ -20,10 +20,10 @@
   })
 </script>
 
-<sidebar class="[ z-50 ] [ fixed inset-0 top-header h-vh ] [ md:static md:inset-auto ]">
-	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] [ invisible opacity-0 pointer-events-none ] {$isSideNavOpen && '[ !visible !opacity-100 !pointer-events-auto ]'} [ md:hidden ] [ md:visible md:opacity-100 md:pointer-events-auto ]"></div>
+<sidebar class="[ z-50 ] [ fixed inset-0 top-header h-vh ] [ sm:z-0 sm:sticky sm:inset-auto sm:top-header ]">
+	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] [ invisible opacity-0 pointer-events-none ] {$isSideNavOpen && '[ !visible !opacity-100 !pointer-events-auto ]'} [ sm:hidden ] [ sm:visible sm:opacity-100 sm:pointer-events-auto ]"></div>
 	<OutClick
-		class="w-64 h-full [ bg-gray-900 ] [ duration-200 ease-in-out ] -translate-x-full {$isSideNavOpen && '!translate-x-0'} [ md:w-auto md:translate-x-0 lg:w-64 ]"
+		class="w-64 h-full | bg-gray-900 | -translate-x-full | duration-200 ease-in-out {$isSideNavOpen && '!translate-x-0'} [ sm:w-[4.25rem] sm:translate-x-0 ] [ lg:w-64 ]"
 		on:outclick={_=> $isSideNavOpen = false} excludeByQuerySelector={['.toggle-SideNav']}
 	>
 		<!-- <div class="overflow-y-overlay overflow-x-hidden h-full pt-4 pb-6 border-r border-white border-opacity-5"> -->
