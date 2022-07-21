@@ -22,7 +22,7 @@
 
 		<div class="flex">
 			<!-- User Avatar -->
-			<NavBtn class="[ rounded-full overflow-hidden ] [ border-2 border-gray-700 ]">
+			<NavBtn class="[ rounded-full overflow-hidden ] [ border-2 border-gray-700 ] [ active:active:scale-x-90 ]">
 				<img src="https://i.pravatar.cc/64?img=3" alt="Your avatar" />
 			</NavBtn>
 		</div>
