@@ -20,7 +20,7 @@
   })
 </script>
 
-<sidebar class="[ z-50 ] [ fixed inset-0 top-header ] [ md:static md:inset-auto md:h-vh ]">
+<sidebar class="[ z-50 ] [ fixed inset-0 top-header h-vh ] [ md:static md:inset-auto ]">
 	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] [ invisible opacity-0 pointer-events-none ] {$isSideNavOpen && '[ !visible !opacity-100 !pointer-events-auto ]'} [ md:hidden ] [ md:visible md:opacity-100 md:pointer-events-auto ]"></div>
 	<OutClick
 		class="w-64 h-full [ bg-gray-900 ] [ duration-200 ease-in-out ] -translate-x-full {$isSideNavOpen && '!translate-x-0'} [ md:w-auto md:translate-x-0 lg:w-64 ]"
