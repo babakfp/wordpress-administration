@@ -28,7 +28,7 @@ export const sideNavItems = readable([
 		icon: 'fa-thin fa-note',
 		subItems: [
 			{
-				title: 'All Posts',
+				title: 'View All',
 				href: '/posts',
 			},
 			{
@@ -50,17 +50,12 @@ export const sideNavItems = readable([
 		],
 	},
 	{
-		title: 'Gallery',
-		href: '/gallery',
-		icon: 'fa-thin fa-image',
-	},
-	{
 		title: 'Pages',
 		href: '/pages',
 		icon: 'fa-thin fa-file',
 		subItems: [
 			{
-				title: 'All Pages',
+				title: 'View All',
 				href: '/pages',
 			},
 			{
@@ -68,6 +63,11 @@ export const sideNavItems = readable([
 				href: '/pages/add',
 			},
 		],
+	},
+	{
+		title: 'Gallery',
+		href: '/gallery',
+		icon: 'fa-thin fa-image',
 	},
 	{
 		title: 'Appearance',
@@ -83,12 +83,12 @@ export const sideNavItems = readable([
 				href: '/appearance/themes',
 			},
 			{
-				title: 'Theme Customizer',
-				href: '/appearance/theme-customizer',
+				title: 'Customizer',
+				href: '/appearance/customizer',
 			},
 			{
-				title: 'Theme Code Editor',
-				href: '/appearance/theme-code-editor',
+				title: 'Code Editor',
+				href: '/appearance/code-editor',
 			},
 		],
 	},
@@ -98,7 +98,7 @@ export const sideNavItems = readable([
 		icon: 'fa-thin fa-plug',
 		subItems: [
 			{
-				title: 'All Plugins',
+				title: 'View All',
 				href: '/plugins',
 			},
 			{
@@ -106,8 +106,8 @@ export const sideNavItems = readable([
 				href: '/plugins/add',
 			},
 			{
-				title: 'Plugin Code Editor',
-				href: '/appearance/plugin-code-editor',
+				title: 'Code Editor',
+				href: '/plugins/code-editor',
 			},
 		],
 	},
@@ -117,7 +117,7 @@ export const sideNavItems = readable([
 		icon: 'fa-thin fa-user',
 		subItems: [
 			{
-				title: 'All Users',
+				title: 'View All',
 				href: '/users',
 			},
 			{
@@ -136,7 +136,7 @@ export const sideNavItems = readable([
 		icon: 'fa-thin fa-wrench-simple',
 		subItems: [
 			{
-				title: 'Available Tools',
+				title: 'View Tools',
 				href: '/tools/available-tools',
 			},
 			{

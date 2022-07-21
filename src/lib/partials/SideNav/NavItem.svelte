@@ -1,12 +1,10 @@
 <script>
 	export let item
 	import NavItemLabel from './NavItemLabel.svelte'
-
-	let showSubLinks = false
 </script>
 
 {#if item?.subItems && item.subItems.length > 0}
-	<li class="group md:relative">
+	<li class="NavItem | group md:relative">
 		<div class="[ flex justify-between ] [ bg-white bg-opacity-5 rounded ]">
 
 			<!-- Link -->
@@ -17,14 +15,13 @@
 			</a>
 
 			<!-- Toggle Dropdown -->
-			<button class="[ flex items-center justify-center ] [ w-10 min-w-10 h-10 ] [ bg-white bg-opacity-0 rounded ] [ duration-150 hover:bg-opacity-5 hover:text-gray-200 ] [ md:hidden ] [ animate-clickable animate-clickable--bottom-right ]"
-				on:click={_=> showSubLinks = !showSubLinks}>
+			<button class="NavItem__toggle-btn [ flex items-center justify-center ] [ w-10 min-w-10 h-10 ] [ bg-white bg-opacity-0 rounded ] [ duration-150 hover:bg-opacity-5 hover:text-gray-200 ] [ md:hidden ] [ animate-clickable animate-clickable--bottom-right ]">
 				<i class="[ fa-thin fa-angle-down ] text-xs opacity-50"></i>
 			</button>
 		</div>
 
-		<!-- Sub Links -->
-		<div class="[ hidden {showSubLinks && '!block'} md:block md:absolute md:pl-2 top-0 left-full ] [ md:invisible md:opacity-0 md:pointer-events-none | md:group-hover:visible md:group-hover:opacity-100 md:group-hover:pointer-events-auto | md:duration-300 md:ease-in-out ]">
+		<!-- Sub Items -->
+		<div class="NavItem__sub-menu [ overflow-hidden h-0 duration-300 ease-in ] [ md:h-auto md:absolute md:pl-2 top-0 left-full ] [ md:invisible md:opacity-0 md:pointer-events-none | md:group-hover:visible md:group-hover:opacity-100 md:group-hover:pointer-events-auto | md:duration-300 md:ease-in-out ]">
 			<div class="my-2 [ bg-white bg-opacity-5 rounded ] [ md:w-48 md:bg-gradient-to-r md:from-gray-800 md:to-gray-900 md:shadow-xl md:shadow-gray-800 ]">
 				<ul>
 					{#each item?.subItems as subItem}
@@ -62,4 +59,7 @@
 	.sublink-item:last-child a {
 		@apply pb-3;
 	}
+  :global(.NavItem--show) .NavItem__sub-menu {
+    @apply !h-auto;
+  }
 </style>
