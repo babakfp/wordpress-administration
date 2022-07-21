@@ -26,8 +26,8 @@
 		class="w-64 h-full [ bg-gray-900 ] [ duration-200 ease-in-out ] -translate-x-full {$isSideNavOpen && '!translate-x-0'} [ md:w-auto md:translate-x-0 lg:w-64 ]"
 		on:outclick={_=> $isSideNavOpen = false} excludeByQuerySelector={['.toggle-SideNav']}
 	>
-		<!-- <div class="overflow-y-overlay overflow-x-hidden h-full pt-4 pb-6 border-r border-white-5"> -->
-		<div class="h-full pt-4 pb-6 border-r border-white-5">
+		<!-- <div class="overflow-y-overlay overflow-x-hidden h-full pt-4 pb-6 border-r border-white border-opacity-5"> -->
+		<div class="h-full pt-4 pb-6 border-r border-white border-opacity-5">
 
 			{#if $sideNavItems && $sideNavItems.length > 0}
 				<nav>

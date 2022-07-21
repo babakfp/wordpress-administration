@@ -4,7 +4,7 @@
 	import NavBtn from './NavBtn.svelte'
 </script>
 
-<header class="[ sticky top-0 ] [ h-header ] [ bg-gray-900 border-b border-white-5 ]">
+<header class="[ sticky top-0 ] [ h-header ] [ bg-gray-900 border-b border-white border-opacity-5 ]">
 	<div class="container [ flex items-center justify-between ] [ h-full ]">
 
 		<div class="[ flex items-center gap-2 ]">
