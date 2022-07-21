@@ -26,8 +26,8 @@
 		class="w-64 h-full [ bg-gray-900 ] [ duration-200 ease-in-out ] -translate-x-full {$isSideNavOpen && '!translate-x-0'} [ md:w-auto md:translate-x-0 lg:w-64 ]"
 		on:outclick={_=> $isSideNavOpen = false} excludeByQuerySelector={['.toggle-SideNav']}
 	>
-		<!-- <div class="overflow-y-auto max-h-full pt-4 pb-6 md:overflow-x-unset"> -->
-		<div class="overflow-y-overlay overflow-x-hidden h-full pt-4 pb-6 border-r border-white-5">
+		<!-- <div class="overflow-y-overlay overflow-x-hidden h-full pt-4 pb-6 border-r border-white-5"> -->
+		<div class="h-full pt-4 pb-6 border-r border-white-5">
 
 			{#if $sideNavItems && $sideNavItems.length > 0}
 				<nav>
@@ -37,12 +37,6 @@
 						{/each}
 					</ul>
 				</nav>
-        <div class="mt-2 mx-4">
-          <button class="[ flex items-center gap-3 ] [ w-full h-10 px-3 ] [ bg-white bg-opacity-5 rounded ] [ duration-150 hover:bg-opacity-10 hover:text-gray-200 ] [ md:justify-center md:w-9 md:h-9 md:px-0 lg:w-full lg:h-10 lg:justify-start lg:px-3 ]">
-            <i class="fa-thin fa-circle-caret-left opacity-75"></i>
-            <span class="text-sm md:hidden lg:block">Collapse</span>
-          </button>
-        </div>
 			{/if}
 
 		</div>

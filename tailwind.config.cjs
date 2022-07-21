@@ -6,18 +6,6 @@ module.exports = {
   theme: {
 		extend: {
 			colors: {
-				white: {
-					DEFAULT: colorWithOpacity('255 255 255'),
-					5: colorWithOpacity('255 255 255', '5'),
-					10: colorWithOpacity('255 255 255', '10'),
-					20: colorWithOpacity('255 255 255', '20'),
-					30: colorWithOpacity('255 255 255', '30'),
-					40: colorWithOpacity('255 255 255', '40'),
-					60: colorWithOpacity('255 255 255', '60'),
-					70: colorWithOpacity('255 255 255', '70'),
-					80: colorWithOpacity('255 255 255', '80'),
-					90: colorWithOpacity('255 255 255', '90'),
-				},
 				gray: {
 					50: cssVarColor('--gray-50'),
 					100: cssVarColor('--gray-100'),
