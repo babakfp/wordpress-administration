@@ -1,6 +1,6 @@
 <script>
 	export let item
-	import NavItemLabel from './NavItemLabel.svelte'
+  import SubMenu from './SubMenu.svelte'
 </script>
 
 {#if item?.subItems && item.subItems.length > 0}
@@ -21,27 +21,7 @@
 		</div>
 
 		<!-- Sub Items -->
-		<div class="NavItem__sub-menu [ overflow-hidden h-0 duration-300 ease-in ] [ md:h-auto md:absolute md:pl-2 top-0 left-full ] [ md:invisible md:opacity-0 md:pointer-events-none | md:group-hover:visible md:group-hover:opacity-100 md:group-hover:pointer-events-auto | md:duration-300 md:ease-in-out ]">
-			<div class="my-2 [ bg-white bg-opacity-5 rounded ] [ md:w-48 md:bg-gradient-to-r md:from-gray-800 md:to-gray-900 md:shadow-xl md:shadow-gray-800 ]">
-				<ul>
-					{#each item?.subItems as subItem}
-						<li class="sublink-item">
-							<a class="flex items-center gap-2 px-4 py-2 [ text-sm text-gray-400 ] [ duration-150 hover:text-gray-200 ]" href={subItem.href}>
-	
-								<!-- Title -->
-								<span>{subItem.title}</span>
-	
-								<!-- Label -->
-								{#if subItem?.label}
-									<NavItemLabel label={subItem.label} />
-								{/if}
-	
-							</a>
-						</li>
-					{/each}
-				</ul>
-			</div>
-		</div>
+		<SubMenu subItems={item?.subItems} />
 	</li>
 {:else}
 	<li>
@@ -51,15 +31,3 @@
 		</a>
 	</li>
 {/if}
-
-<style lang="postcss">
-	.sublink-item:first-child a {
-		@apply pt-3;
-	}
-	.sublink-item:last-child a {
-		@apply pb-3;
-	}
-  :global(.NavItem--show) .NavItem__sub-menu {
-    @apply !h-auto;
-  }
-</style>

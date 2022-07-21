@@ -37,6 +37,12 @@
 						{/each}
 					</ul>
 				</nav>
+        <div class="mt-2 mx-4">
+          <button class="[ flex items-center gap-3 ] [ w-full h-10 px-3 ] [ bg-white bg-opacity-5 rounded ] [ duration-150 hover:bg-opacity-10 hover:text-gray-200 ] [ md:justify-center md:w-9 md:h-9 md:px-0 lg:w-full lg:h-10 lg:justify-start lg:px-3 ]">
+            <i class="fa-thin fa-circle-caret-left opacity-75"></i>
+            <span class="text-sm md:hidden lg:block">Collapse</span>
+          </button>
+        </div>
 			{/if}
 
 		</div>
