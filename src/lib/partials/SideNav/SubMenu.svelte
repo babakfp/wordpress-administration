@@ -5,7 +5,7 @@
   let SubMenu
   $: if (SubMenu && window.innerWidth >= 640) {
     let bounding = SubMenu.getBoundingClientRect();
-    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= window.innerWidth && bounding.bottom <= window.innerHeight) {
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
       // Element is in the viewport!
     } else {
       // Element is NOT in the viewport!
