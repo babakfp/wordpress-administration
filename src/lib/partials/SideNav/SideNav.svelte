@@ -5,10 +5,11 @@
 	import OutClick from 'svelte-outclick'
 	import { sideNavItems, isSideNavOpen } from '$stores/sidenav.js'
 	import NavItem from './NavItem.svelte'
+  import { browser } from '$app/env'
 
 	$: $navigating && ($isSideNavOpen = false)
 
-  onMount(() => {
+  $: if (browser) {
     const NavItems = document.querySelectorAll('.NavItem')
     NavItems.forEach(navItem => {
       const toggleBtn = navItem.querySelector('.NavItem__toggle-btn')
@@ -17,7 +18,7 @@
         NavItems.forEach(navItem2 => navItem !== navItem2 && navItem2.classList.remove('NavItem--show'))
       })
     })
-  })
+  }
 </script>
 
 <sidebar class="[ z-50 ] [ fixed inset-0 top-header h-vh ] [ sm:z-0 sm:sticky sm:inset-auto sm:top-header ]">

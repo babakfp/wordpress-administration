@@ -6,18 +6,7 @@ module.exports = {
   theme: {
 		extend: {
 			colors: {
-				gray: {
-					50: cssVarColor('--gray-50'),
-					100: cssVarColor('--gray-100'),
-					200: cssVarColor('--gray-200'),
-					300: cssVarColor('--gray-300'),
-					400: cssVarColor('--gray-400'),
-					500: cssVarColor('--gray-500'),
-					600: cssVarColor('--gray-600'),
-					700: cssVarColor('--gray-700'),
-					800: cssVarColor('--gray-800'),
-					900: cssVarColor('--gray-900'),
-				},
+				gray: colors.neutral,
 				brand: {
 					DEFAULT: cssVarColor('--brand'),
 					light: cssVarColor('--brand-light'),
@@ -25,8 +14,8 @@ module.exports = {
 			},
 			spacing: {
 				17: '4.25rem',
-				header: '3.5rem',
-				vh: 'calc(100vh - 4rem)'
+				header: 'var(--header-h)',
+				vh: 'calc(100vh - var(--header-h))'
 			},
 			maxWidth: theme => theme('spacing'),
 			minWidth: theme => theme('spacing'),

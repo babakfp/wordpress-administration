@@ -1,9 +1,20 @@
 <script>
   export let subItems
 	import NavItemLabel from './NavItemLabel.svelte'
+  
+  let SubMenu
+  $: if (SubMenu && window.innerWidth >= 640) {
+    let bounding = SubMenu.getBoundingClientRect();
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= window.innerWidth && bounding.bottom <= window.innerHeight) {
+      // Element is in the viewport!
+    } else {
+      // Element is NOT in the viewport!
+      SubMenu.classList.add('SubMenu--bottom')
+    }
+  }
 </script>
 
-<div class="
+<div bind:this={SubMenu} class="
   NavItem__SubMenu
   [ overflow-hidden h-0 duration-300 ease-in ]
   [ sm:h-auto | sm:absolute sm:pl-2 sm:top-0 sm:left-full ]
@@ -31,6 +42,13 @@
 </div>
 
 <style lang="postcss">
+  .NavItem__SubMenu:global(.SubMenu--bottom) {
+    @apply sm:top-auto sm:bottom-0;
+  }
+  .NavItem__SubMenu:global(.SubMenu--bottom) > div::before {
+    @apply sm:top-auto sm:bottom-4;
+  }
+
   @screen sm {
     .NavItem__SubMenu > div::before {
       @apply absolute top-4 right-full translate-x-2;
@@ -45,10 +63,6 @@
   :global(.NavItem--show) .NavItem__SubMenu {
     @apply !h-auto;
   }
-  .SubMenu-item:first-child a {
-		@apply pt-4;
-	}
-	.SubMenu-item:last-child a {
-		@apply pb-4;
-	}
+  .SubMenu-item:first-child a { @apply pt-4 }
+	.SubMenu-item:last-child a  { @apply pb-4 }
 </style>

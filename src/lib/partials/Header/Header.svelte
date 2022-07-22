@@ -9,7 +9,7 @@
 
 		<div class="[ flex items-center gap-2 ]">
 			<!-- Open Mobile Menu -->
-			<NavBtn class="toggle-SideNav" icon="bars" on:click={_=> $isSideNavOpen = !$isSideNavOpen} />
+			<NavBtn class="toggle-SideNav sm:hidden" icon="bars" on:click={_=> $isSideNavOpen = !$isSideNavOpen} />
 
 			<!-- Go To Client -->
 			{#if !$isClientSide}
