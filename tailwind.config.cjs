@@ -6,7 +6,7 @@ module.exports = {
   theme: {
 		extend: {
 			colors: {
-				gray: colors.neutral,
+				gray: colors.zinc,
 				brand: {
 					DEFAULT: cssVarColor('--brand'),
 					light: cssVarColor('--brand-light'),

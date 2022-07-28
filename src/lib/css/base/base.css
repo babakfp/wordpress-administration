@@ -7,7 +7,7 @@
 	}
 
 	/* Chrome Scrollbar */
-	html *:not(body)::-webkit-scrollbar {
+	:not(body)::-webkit-scrollbar {
 		@apply w-1.5 h-1.5;
 
 		&-thumb {
@@ -37,7 +37,7 @@
 
   body {
 		@apply min-h-screen bg-gray-900 text-gray-300 overflow-x-hidden;
-		font-family: "Poppins";
+		font-family: 'Poppins', sans-serif;
 	}
 
 	a,
