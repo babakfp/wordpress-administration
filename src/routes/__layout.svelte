@@ -1,6 +1,6 @@
 <script>
   import '../lib/css/app.css'
-	import Header from '$partials/Header/Header.svelte'
+	import Header from '$partials/Header'
 	import SideNav from '$partials/SideNav/SideNav.svelte'
 </script>
 
