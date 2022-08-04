@@ -6,8 +6,8 @@ const config = {
   kit: {
     adapter: adapter(),
 		alias: {
-			$partials: 'src/lib/partials',
-			$components: 'src/lib/components',
+			$partials: 'src/lib/components/partials',
+			$components: 'src/lib/components/reusable',
 			$stores: 'src/lib/stores',
 			$utilities: 'src/lib/utilities',
 		},
