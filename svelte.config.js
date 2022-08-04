@@ -1,25 +1,19 @@
-import path from 'path'
 import preprocess from 'svelte-preprocess'
 import adapter from '@sveltejs/adapter-vercel'
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     adapter: adapter(),
-		vite: {
-			resolve: {
-				alias: {
-					'$partials': path.resolve('src/lib/partials'),
-					'$components': path.resolve('src/lib/components'),
-					'$stores': path.resolve('src/lib/stores'),
-          '$utilities': path.resolve('src/lib/utilities'),
-				},
-			},
+		alias: {
+			$partials: 'src/lib/partials',
+			$components: 'src/lib/components',
+			$stores: 'src/lib/stores',
+			$utilities: 'src/lib/utilities',
 		},
   },
   preprocess: [
-    preprocess({
-      postcss: true,
-    }),
+    preprocess({ postcss: true }),
   ],
 }
 
