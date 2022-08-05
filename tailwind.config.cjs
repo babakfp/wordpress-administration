@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
-const { colorWithOpacity, cssVarColor } = require('./tailwind.config.helpers.cjs')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,svelte}'],
   theme: {
@@ -8,10 +8,11 @@ module.exports = {
 			colors: {
 				gray: colors.zinc,
 				brand: {
-					DEFAULT: cssVarColor('--brand'),
-					light: cssVarColor('--brand-light'),
+					DEFAULT: '#0369a1',
+					light: '#0284c7',
 				},
 			},
+			// TODO
 			spacing: {
 				17: '4.25rem',
 				header: 'var(--header-h)',

@@ -9,7 +9,7 @@
 
 		<div class="[ flex items-center gap-2 ]">
 			<!-- Open Mobile Menu -->
-			<HeaderBtn class="toggle-SideNav sm:hidden" icon="bars" on:click={_=> $isSideNavOpen = !$isSideNavOpen} />
+			<HeaderBtn class="SideNav__toggle sm:hidden" icon="bars" on:click={_=> $isSideNavOpen = !$isSideNavOpen} />
 
 			<!-- Go To Client -->
 			{#if !$isClientSide}
@@ -23,7 +23,7 @@
 		<div class="flex">
 			<!-- User Avatar -->
 			<HeaderBtn class="[ rounded-full overflow-hidden ] [ border-2 border-gray-700 ] [ active:active:scale-x-90 ]">
-				<img src="https://i.pravatar.cc/64?img=3" alt="Your avatar" />
+				<img src="/avatar.jpg" alt="Your avatar" />
 			</HeaderBtn>
 		</div>
 

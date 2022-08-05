@@ -1,1 +1,1 @@
-export { default } from './.SideNav.svelte'
+export { default } from './SideNav.svelte'
