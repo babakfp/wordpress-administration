@@ -1,5 +1,9 @@
 const colors = require('tailwindcss/colors')
 
+const extraHeight = {
+	'screen-header': 'calc(100vh - var(--header-h))',
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,svelte}'],
@@ -16,12 +20,23 @@ module.exports = {
 			spacing: {
 				17: '4.25rem',
 				header: 'var(--header-h)',
-				vh: 'calc(100vh - var(--header-h))'
 			},
 			maxWidth: theme => theme('spacing'),
 			minWidth: theme => theme('spacing'),
-			minHeight: theme => theme('spacing'),
-			maxHeight: theme => theme('spacing'),
+
+			height: ({ theme }) => ({
+				...theme('spacing'),
+				...extraHeight,
+			}),
+			maxHeight: ({ theme }) => ({
+				...theme('spacing'),
+				...extraHeight,
+			}),
+			minHeight: ({ theme }) => ({
+				...theme('spacing'),
+				...extraHeight,
+			}),
+
 			zIndex: {
 				1: '1',
 				2: '2',

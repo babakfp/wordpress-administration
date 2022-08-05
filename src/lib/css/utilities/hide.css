@@ -1,0 +1,11 @@
+@layer utilities {
+
+	.hide {
+		@apply invisible opacity-0 pointer-events-none;
+	}
+
+	.show {
+		@apply visible opacity-100 pointer-events-auto;
+	}
+
+}

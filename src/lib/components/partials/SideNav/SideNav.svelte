@@ -21,8 +21,8 @@
   }
 </script>
 
-<sidebar class="[ z-50 ] [ fixed inset-0 top-header h-vh ] [ sm:z-0 sm:sticky sm:inset-auto sm:top-header ]">
-	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] [ invisible opacity-0 pointer-events-none ] {$isSideNavOpen && '[ !visible !opacity-100 !pointer-events-auto ]'} [ sm:hidden ] [ sm:visible sm:opacity-100 sm:pointer-events-auto ]"></div>
+<sidebar class="[ z-50 fixed inset-0 top-header h-screen-header ] { !$isSideNavOpen && 'hide' } [ sm:show sm:z-0 sm:sticky sm:inset-auto sm:top-header ]">
+	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] {$isSideNavOpen ? 'show' : 'hide'} [ sm:hidden ] [ sm:visible sm:opacity-100 sm:pointer-events-auto ]"></div>
 	<OutClick
 		class="w-64 h-full | bg-gray-900 | -translate-x-full | duration-200 ease-in-out {$isSideNavOpen && '!translate-x-0'} [ sm:w-[4.25rem] sm:translate-x-0 ] [ lg:w-56 ]"
 		on:outclick={_=> $isSideNavOpen = false} excludeByQuerySelector={['.SideNav__toggle']}
