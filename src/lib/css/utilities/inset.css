@@ -1,0 +1,11 @@
+@layer utilities {
+
+	.inset-x-center {
+		@apply right-50% translate-x-50%;
+	}
+
+	.inset-y-center {
+		@apply top-50% -translate-y-50%;
+	}
+
+}

@@ -16,14 +16,13 @@ module.exports = {
 					light: '#0284c7',
 				},
 			},
-			// TODO
 			spacing: {
 				17: '4.25rem',
 				header: 'var(--header-h)',
+				'50%': '50%',
 			},
 			maxWidth: theme => theme('spacing'),
 			minWidth: theme => theme('spacing'),
-
 			height: ({ theme }) => ({
 				...theme('spacing'),
 				...extraHeight,
@@ -36,7 +35,6 @@ module.exports = {
 				...theme('spacing'),
 				...extraHeight,
 			}),
-
 			zIndex: {
 				1: '1',
 				2: '2',
