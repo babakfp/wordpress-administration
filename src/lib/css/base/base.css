@@ -7,19 +7,26 @@
 	}
 
 	/* Chrome Scrollbar */
-	:not(body)::-webkit-scrollbar {
-		@apply w-1.5 h-1.5;
+	::-webkit-scrollbar {
+		@apply w-2.5 h-2.5;
 
 		&-thumb {
-			@apply min-h-12 bg-white bg-opacity-10 rounded-full bg-clip-padding hover:bg-gray-600;
-			border: 2px solid transparent;
+			@apply min-h-12 bg-gray-800 rounded-full border-y-8 border-x-4 border-solid border-transparent bg-clip-padding hover:bg-gray-700;
 		}
 	}
+
+	body::-webkit-scrollbar {
+		@apply bg-white bg-opacity-5;
+
+		&-thumb {
+			@apply bg-gray-700 hover:bg-gray-600;
+		}
+	}
+
 	/* FireFox Scrollbar :| */
-	body *:not(span):not(a):not(p):not(header):not(footer) {
-		--tw-bg-opacity: 0.1;
+	*:not(span):not(a):not(p):not(header):not(footer) {
 		scrollbar-width: thin;
-		scrollbar-color: rgb(255 255 255 / var(--tw-bg-opacity)) transparent;
+		scrollbar-color: theme(colors.gray.800) transparent;
 	}
 
   * {
@@ -63,5 +70,9 @@
   i {
 		@apply !flex items-center justify-center text-inherit text-base !leading-none;
   }
+
+	.container {
+		@apply xl:!max-w-screen-xl;
+	}
 
 }
