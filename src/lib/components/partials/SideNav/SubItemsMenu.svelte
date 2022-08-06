@@ -1,51 +1,8 @@
 <script>
-	import { browser } from '$app/env'
-	import ItemLabel from './ItemLabel.svelte'
-	
 	export let subItems
-  // let SubItemsMenu
-
-	// const headerHeight = 56
-	// // Same as 16px spacing/padding. But throwing in a bigger value, so the menu don't be too close to the view edge.
-	// const inViewWhiteSpace = 64
-	// const inViewTopSpacing = headerHeight + inViewWhiteSpace
-	// const inViewBottomSpacing = browser && (window.innerHeight || document.documentElement.clientHeight) - inViewWhiteSpace
-
-	// const isElementBottomInView = (bounding ) => {
-	// 	if (bounding.bottom - inViewBottomSpacing <= 0) {
-	// 		return true
-	// 	}
-	// 	return false
-	// }
-
-	// const isElementTopInView = (bounding) => {
-	// 	if (bounding.top >= inViewTopSpacing) {
-	// 		return true
-	// 	}
-	// 	return false
-	// }
-
-	// const doWhenSubItemsMenuNotInView = () => {
-	// 	if (!SubItemsMenu) return
-	// 	const bounding = SubItemsMenu.getBoundingClientRect()
-
-	// 	if (!isElementBottomInView(bounding)) {
-  //     SubItemsMenu.classList.add('SubItemsMenu--bottom')
-  //   } else if (!isElementTopInView(bounding)) {
-  //     SubItemsMenu.classList.remove('SubItemsMenu--bottom')
-  //   } else {
-  //     SubItemsMenu.classList.remove('SubItemsMenu--bottom')
-  //   }
-	// }
-
-	// $: if (browser && SubItemsMenu && window.innerWidth >= 640) {
-	// 	doWhenSubItemsMenuNotInView()
-	// 	window.addEventListener('scroll', () => doWhenSubItemsMenuNotInView())
-	// 	window.addEventListener('resize', () => doWhenSubItemsMenuNotInView())
-	// }
+	import ItemLabel from './ItemLabel.svelte'
 </script>
 
-<!-- bind:this={SubItemsMenu} -->
 <div class="
   NavItem__SubMenu
   [ overflow-hidden h-0 duration-300 ease-in ]
