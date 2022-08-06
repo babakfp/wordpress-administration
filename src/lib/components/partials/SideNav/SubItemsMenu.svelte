@@ -15,10 +15,8 @@
         <li class="SubItemsMenu-item">
           <a class="flex items-center gap-2 px-4 py-2 [ text-sm text-gray-400 ] [ duration-150 hover:text-gray-200 ]" href={subItem.href}>
 
-            <!-- Title -->
             <span>{subItem.title}</span>
 
-            <!-- Label -->
             {#if subItem?.label}
               <ItemLabel label={subItem.label} />
             {/if}
