@@ -7,7 +7,7 @@
 <Header />
 <div class="max-w-screen-xl min-h-screen-header mx-auto sm:flex">
 	<SideNav />
-	<main class="container pt-8 pb-12">
+	<main class="container pt-8 pb-12 | relative">
 		<slot />
 	</main>
 </div>

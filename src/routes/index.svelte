@@ -1,5 +1,11 @@
+<script>
+	import PageStickyOptions from "$partials/PageStickyOptions.svelte";
+</script>
+
+<PageStickyOptions />
+
 <!-- TODO: This is for PostType layout -->
-<div class="[ flex items-center justify-between pb-4 mb-4 ] [ border-b border-white border-opacity-5 ]">
+<div class="[ flex items-center justify-between pb-4 mb-4 mt-4 ] [ border-b border-white border-opacity-5 ]">
 	<h1 class="text-xl font-medium">Templates</h1>
 	<a class="btn text-sm bg-gray-800" href="/">Add New</a>
 </div>
