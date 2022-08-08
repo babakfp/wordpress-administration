@@ -17,7 +17,7 @@
 			{/if}
 
 			<!-- Report Issue -->
-			<HeaderBtn icon="bug" href="/issues" />
+			<HeaderBtn icon="bug" href="/report-issues" />
 		</div>
 
 		<div class="flex">
