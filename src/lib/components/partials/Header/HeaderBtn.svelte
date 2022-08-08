@@ -7,11 +7,11 @@
 </script>
 
 {#if href}
-	<a class="{className} btn w-10 h-9 p-0 | bg-white/5" {href}>
+	<a class="{className} btn w-10 p-0 | bg-white/5" {href}>
 		<i class="fa-thin fa-{icon} | opacity-75"></i>
 	</a>
 {:else}
-	<button class="{className} btn w-10 h-9 p-0 | bg-white/5" on:click>
+	<button class="{className} btn w-10 p-0 | bg-white/5" on:click>
 		{#if icon}
 			<i class="fa-thin fa-{icon} | opacity-75"></i>
 		{/if}
