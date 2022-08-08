@@ -20,12 +20,10 @@
 			<HeaderBtn icon="bug" href="/report-issues" />
 		</div>
 
-		<div class="flex">
-			<!-- User Avatar -->
-			<HeaderBtn class="[ rounded-full overflow-hidden ] [ border-2 border-gray-700 ] [ active:active:scale-x-90 ]">
-				<img src="/avatar.jpg" alt="Your avatar" />
-			</HeaderBtn>
-		</div>
+		<!-- User Avatar -->
+		<HeaderBtn class="!w-9 [ rounded-full overflow-hidden ] [ border-2 border-gray-700 ] [ active:active:scale-x-90 ]">
+			<img src="/avatar.jpg" alt="Your avatar" />
+		</HeaderBtn>
 
 	</div>
 </header>
