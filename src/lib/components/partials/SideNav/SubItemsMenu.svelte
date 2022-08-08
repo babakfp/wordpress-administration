@@ -9,7 +9,7 @@
   [ sm:h-auto | sm:absolute sm:pl-2 sm:top-0 sm:left-full ]
   [ sm:invisible sm:opacity-0 sm:pointer-events-none sm:-translate-x-2 | sm:group-hover:visible sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-hover:-translate-x-0 | sm:duration-150 sm:ease-in | sm:overflow-unset ]
 ">
-  <div class="[ my-2 | bg-white bg-opacity-5 rounded ] [ sm:w-48 sm:my-0 sm:bg-gray-800 sm:shadow-xl sm:shadow-black/50 ] [ lg:my-0 ]">
+  <div class="[ my-2 | bg-white/5 rounded ] [ sm:w-48 sm:my-0 sm:bg-gray-800 sm:shadow-xl sm:shadow-black/50 ] [ lg:my-0 ]">
     <ul>
       {#each subItems as subItem}
         <li class="SubItemsMenu-item">
