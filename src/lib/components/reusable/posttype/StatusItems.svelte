@@ -24,7 +24,7 @@
 	]
 </script>
 
-<nav class="overflow-x-overlay -mt-4 -ml-4">
+<nav class="overflow-x-overlay -mt-4 -mx-4">
 	<ol class="flex text-sm">
 		{#each posttypeItems as item}
 			<li class:is-active={item.isActive} class="whitespace-nowrap">
