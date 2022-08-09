@@ -39,12 +39,8 @@
   @screen sm {
     .NavItem__SubMenu > div::before {
       @apply absolute top-4 right-full translate-x-2;
-      content: "";
-      width: 0; 
-      height: 0; 
-      border-top: 4px solid transparent;
-      border-bottom: 4px solid transparent; 
-      border-right: 4px solid theme('colors.gray.800'); 
+			@apply border-y-4 border-r-4 border-r-gray-800 w-0 h-0 border-transparent;
+			content: "";
     }
   }
   :global(.SideNav__Item--show) .NavItem__SubMenu {
