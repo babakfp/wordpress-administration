@@ -21,7 +21,7 @@
   }
 </script>
 
-<sidebar class="[ z-50 fixed inset-0 top-header h-screen-header ] { !$isSideNavOpen && 'hide' } [ sm:show sm:static sm:inset-auto sm:h-auto ]">
+<sidebar class="[ z-40 fixed inset-0 top-header h-screen-header ] { !$isSideNavOpen && 'hide' } [ sm:show sm:static sm:inset-auto sm:h-auto ]">
 	<div class="[ absolute inset-0 ] [ bg-gray-900 bg-opacity-60 ] [ duration-200 ease-in-out ] {$isSideNavOpen ? 'show' : 'hide'} [ sm:hidden ]"></div>
 	<OutClick
 		class="w-64 h-full | bg-gray-900 | -translate-x-full | duration-200 ease-in-out {$isSideNavOpen && '!translate-x-0'} [ sm:w-[4.25rem] sm:translate-x-0 ] [ lg:w-56 ]"
