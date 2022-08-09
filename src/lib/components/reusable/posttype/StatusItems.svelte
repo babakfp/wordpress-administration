@@ -31,7 +31,7 @@
 				<a class="flex gap-1 py-4 px-3" href={item.href}>
 					<div>
 						<span class="{item.isActive && 'font-semibold'}">{item.title}</span>
-						<span class="text-gray-500">(<span class="text-gray-300">{item.count}</span>)</span>
+						<span class="text-gray-500 text-xs">(<span class="text-gray-300">{item.count}</span>)</span>
 					</div>
 				</a>
 			</li>
