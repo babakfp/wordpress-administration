@@ -15,7 +15,6 @@ module.exports = {
 					DEFAULT: '#0369a1',
 					light: '#0284c7',
 				},
-				accent: '#55BFDD',
 			},
 			spacing: {
 				17: '4.25rem',

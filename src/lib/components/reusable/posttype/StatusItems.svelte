@@ -47,11 +47,11 @@
 		@apply pr-4;
 	}
 	.is-active div {
-		@apply relative -my-2 py-1 px-2 rounded border-2 border-accent/75;
+		@apply relative -my-2 py-1 px-2 rounded border-2 border-brand;
 		
 		&:after {
 			@apply absolute top-full translate-y-px right-1/2 translate-x-1/2;
-			@apply border-x-4 border-t-4 border-t-accent w-0 h-0 border-transparent;
+			@apply border-x-4 border-t-4 border-t-brand w-0 h-0 border-transparent;
 			content: "";
 		}
 	}
