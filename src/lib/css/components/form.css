@@ -1,0 +1,16 @@
+
+@layer components {
+
+	.input {
+		@apply w-full h-input px-4 text-sm bg-gray-800 rounded duration-150 ease-in placeholder:text-gray-600 hover:border-gray-600 focus:border-gray-600;
+	}
+
+	textarea.input {
+		@apply h-auto py-4 resize-y;
+	}
+
+	.input-label {
+		@apply inline-block mb-1 cursor-pointer;
+	}
+
+}

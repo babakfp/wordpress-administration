@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 const extraHeight = {
 	'screen-header': 'calc(100vh - var(--header-h))',
+	input: '2.5rem',
 }
 
 /** @type {import('tailwindcss').Config} */
